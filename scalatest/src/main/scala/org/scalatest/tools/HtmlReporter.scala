@@ -552,7 +552,7 @@ private[scalatest] class HtmlReporter(
             "  }" + "\n" + 
             "}" + "\n" + 
             "function showDetails(suiteName) {" + "\n" + 
-            "  document.getElementById('details_view').innerHTML = \"<iframe src='\" + suiteName + \".html' width='100%' height='100%'></iframe>\";" + "\n" + 
+            "  document.getElementById('details_view').innerHTML = \"<iframe src='\" + suiteName + \".html' width='100%' height='100%' sandbox='allow-scripts'></iframe>\";" + "\n" + 
             "}" + "\n" + 
             "function resizeDetailsView() {" + "\n" + 
             "  var headerView = document.getElementById('scalatest-header');" + "\n" + 
